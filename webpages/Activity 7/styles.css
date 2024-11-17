@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Tungsten-Bold;
+    src: url(fonts/Tungsten-Bold.otf);
+}
+
+@font-face {
+    font-family: Tungsten-Light;
+    src: url(fonts/Tungsten-Light.otf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+h1 {
+    color: #ff5258;
+    margin: 10px;
+    font-family: 'Tungsten-Bold';
+    font-size: 3em;
+}
+
+.agent {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+}
+
+.agent:hover {
+    transform: translateY(-5px);
+}
+
+.agent img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.agent h2 {
+    font-size: 2.2em;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Tungsten-Bold';
+}
+
+.agent p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.bg-image {
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.page-link {
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Tungsten-Light';
+    cursor: pointer;
+}
+
+.page-link:hover {
+    color: red;
+}
+
+.navbar-logo {
+    max-height: 80px;
+    width: auto;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(226, 67, 67);
+    transition: transform 0.4s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-3.5px);
+}
+
+.ability {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.ability:hover {
+    transform: translateY(-5px);
+}
+
+.ability img {
+    width: 100px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(182, 91, 91);
+    border-radius: 80px;
+}
+
+.ability h2 {
+    font-size: 2.2em;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Tungsten-Bold';
+    text-align: center;
+}
+
+.ability p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#agentRole {
+    width: fit-content;
+    background-color: transparent;
+    border-style: none;
+    transition: transform 0.4s ease;
+}
+
+#agentRole:hover {
+    transform: translateY(-5px);
+}
+
+#title {
+    color: rgb(182, 91, 91);
+}
