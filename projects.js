@@ -3,7 +3,7 @@ var descriptions = [
     "Activity 5: Osaka Castle",
     "Activity 6: Bird Fun Facts",
     "Activity 7: Valorant Agents",
-    "Description of Project 5",
+    "Activity 8: Guitar Covers",
     "Description of Project 6"
 ];
 var links = [
@@ -11,7 +11,7 @@ var links = [
     "webpages/Activity 5/index.html",
     "webpages/Activity 6/index.html",
     "webpages/Activity 7/index.html",
-    "#",
+    "webpages/Activity 8/index.html",
     "#"
 ];
 
