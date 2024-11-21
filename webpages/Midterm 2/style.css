@@ -1,0 +1,31 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#contentSection0 {
+	background-color: #e9d4d3;
+}
+
+#contentSection1 {
+	background-color: #D4D3E9;
+}
+
+#contentSection2 {
+	background-color: #f8f3e8;
+}
+
+#contentSection3 {
+	background-color: #d8efff;
+}
+
+.contentImage {
+	animation: fadeIn 1s ease-in-out;
+}
+
+.contentTitle {
+	animation: animate__backInLeft 1s ease-in-out;
+}
