@@ -3,8 +3,8 @@ var descriptions = [
     "AppDev: Second Sem"
 ];
 var links = [
-    "webdev/webdev.html",
-    "appdev/appdev.html"
+    "webdev",
+    "appdev"
 ];
 
 for (var i = 0; i < descriptions.length; i++) {
