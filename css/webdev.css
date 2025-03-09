@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Domaine;
+    src: url(../fonts/TestDomaineDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: Maison;
+    src: url(../fonts/fonnts.com-Maison_Neue_Bold.ttf);
+}
+
+:root {
+    --animate-delay: 0.25s;
+}
+
+body {
+    font-family: 'Maison';
+    background-color: #f9f0e3;
+}
+
+.animate__fadeInDown {
+    animation-duration: 1.5s;
+}
+
+.navbar {
+    background-color: #f9f0e3;
+    position: relative;
+    font-family: 'Domaine';
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    width: 90%;
+    max-width: 90%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-container {
+    font-family: 'Maison';
+    animation-duration: 1.5s;
+
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.project-card {
+    background-color: rgba(110, 90, 175, 0.521);
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px gray;
+}
+
+.project-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    background-color: #ff4655;
+    color: #efefef;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #9c2a6d;
+}
+
+.project-container::after {
+    content: "";
+    display: block;
+    width: 90%;
+    max-width: 90%;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    margin-bottom: 5%;
+    
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
