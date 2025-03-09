@@ -14,7 +14,7 @@ var links = [
     "webpages/Activity 6/index.html",
     "webpages/Activity 7/index.html",
     "webpages/Midterm 1 - Unit 4/index.html",
-    "index.html/#playlist",
+    "https://shanerhyder.github.io/index.html#playlist",
     "webpages/Midterm 2/index.html",
     "../404.html"
 ];
