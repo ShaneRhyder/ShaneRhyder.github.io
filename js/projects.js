@@ -4,7 +4,7 @@ var descriptions = [
 ];
 var links = [
     "webdev",
-    "appdev"
+    "ADET"
 ];
 
 for (var i = 0; i < descriptions.length; i++) {
