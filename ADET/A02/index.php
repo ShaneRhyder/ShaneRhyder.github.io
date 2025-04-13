@@ -63,11 +63,11 @@ if (isset($_GET['page'])) {
             </button>
             <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
                 <ul class="mb-0">
-                    <li><a class="link-style" href="#">Nature</a></li>
-                    <li><a class="link-style" href="#">City</a></li>
-                    <li><a class="link-style" href="#">Animals</a></li>
-                    <li><a class="link-style" href="#">Space</a></li>
-                    <li><a class="link-style" href="#">Foods and Drinks</a></li>
+                    <li><a class="link-style" href="?page=nature">Nature</a></li>
+                    <li><a class="link-style" href="?page=city">City</a></li>
+                    <li><a class="link-style" href="?page=animals">Animals</a></li>
+                    <li><a class="link-style" href="?page=space">Space</a></li>
+                    <li><a class="link-style" href="?page=food">Foods and Drinks</a></li>
                 </ul>
             </div>
         </div>
