@@ -1,8 +1,8 @@
 var descriptions = [
-    "Nothing yet"
+    "A03 | TechTrove"
 ];
 var links = [
-    ""
+    "A03/index.html"
 ];
 
 for (var i = 0; i < descriptions.length; i++) {
