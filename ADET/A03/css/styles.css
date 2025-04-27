@@ -1,0 +1,331 @@
+@font-face {
+  font-family: Maison;
+  src: url(../../../fonts/fonnts.com-Maison_Neue_Bold.ttf)
+}
+
+* {
+  font-family: Maison;
+}
+
+.navbar .container-fluid .navbar-brand {
+  background: linear-gradient(to right, #00aeff, #e5ff00, #b37400, #e5ff00, #00aeff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+.collapse .navbar-nav .nav-item:hover a {
+  background: linear-gradient(to right, #00aeff, #e5ff00, #b37400, #e5ff00, #00aeff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+.carousel-item img {
+  width: 25%;
+  height: 25%;
+  border-radius: 15px;
+  object-fit: contain;
+  object-position: 50% 50%;
+  cursor: pointer;
+}
+
+.custom-dark-icon {
+  filter: invert(1) brightness(2);
+}
+
+.hide-item {
+  display: block;
+}
+
+.carousel p {
+  font-size: 2rem;
+  background: linear-gradient(to right, #00aeff, #e5ff00, #b37400, #e5ff00, #00aeff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+.carousel-item .carousel-image {
+  margin: 10px;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.carousel-item .carousel-image:hover {
+  transform: translateY(-5px);
+}
+
+.item-extend {
+  height: 200px;
+}
+
+.item-tall {
+  height: 408px;
+}
+
+.item-short {
+  height: 200px;
+}
+
+.bento-container {
+  position: relative;
+  background-color: rgb(41, 41, 73);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.bento-container::after {
+  border-radius: inherit;
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 100.5%;
+  background-image: conic-gradient(from var(--angle), transparent 0%, rgb(154, 87, 216), rgb(247, 247, 149), rgb(112, 134, 253));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -10;
+  padding: 10px;
+  animation: 3s spin linear infinite;
+}
+
+.bento-container::before {
+  filter: blur(1.5rem);
+}
+
+.bento-container p {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #ff008c, #ffe600, #7cd162, #e5ff00, #ff008c);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+.products .product-title {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #ff008c, #ffe600, #7cd162, #e5ff00, #ff008c);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.bento-item, .banner-item {
+  position: relative;
+}
+
+.bento-item .image, a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.bento-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.bento-item:hover .image img {
+  transform: scale(1.7);
+  filter: blur(3.5px);
+}
+
+.bento-container .bento-item .image .bento-text {
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+  border-radius: inherit;
+  background: linear-gradient(to right, #00ff80, #ffe600, #b762d1, #e5ff00, #00ff80);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bento-container .bento-item .image:hover .bento-text {
+  opacity: 1;
+  animation: move-down .3s linear, animate-gradient 1.5s linear infinite;
+  padding: 1em;
+  width: 100%;
+}
+
+.banner-item .banner-image img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: blur(5px);
+}
+
+
+.banner-container .banner-item .banner-image .banner-text {
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
+  font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
+  border-radius: inherit;
+  background: linear-gradient(to right, #00ff80, #ffe600, #b762d1, #e5ff00, #00ff80);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 1.5s linear infinite;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-item img {
+    width: 22.5%;
+    height: 22.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .hide-item {
+    display: none;
+  }
+
+  .bento-container .bento-item .image .bento-text {
+    font-size: 20px;
+  }
+
+  .bento-container::after {
+    width: 101%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .item-extend {
+    height: 408px;
+  }
+
+  .bento-container::after {
+    height: 100.5%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .carousel-item img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .item-short {
+    height: 150px;
+  }
+
+  .item-tall {
+    height: 308px;
+  }
+
+  .item-extend {
+    height: 308px;
+  }
+
+  .bento-container .bento-item .image .bento-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .carousel-item img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .item-tall {
+    height: 208px;
+  }
+
+  .item-extend {
+    height: 208px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .carousel-item img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .carousel-item img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@keyframes move-down {
+  0% {
+    top: 10%;
+  }
+
+  50% {
+    top: 35%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
