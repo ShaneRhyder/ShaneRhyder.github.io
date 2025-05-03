@@ -34,15 +34,6 @@
       background-color: #f2d200;
     }
 
-    /*.topcontainer,
-    .maincontainer {
-      background-image: url('img/banner.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-    }*/
-
     .small-receipt {
       background-color: #f2d200;
       color: #0a1988;
@@ -51,6 +42,7 @@
     }
 
     .receipt {
+      height: 92dvh;
       background-color: #f2d200;
       color: #0a1988;
     }
@@ -101,6 +93,10 @@
       .maincontainer {
         height: 55dvh;
       }
+
+      .receipt {
+        height: 30dvh;
+      }
     }
   </style>
 
@@ -138,32 +134,14 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-md-block col-12 col-md-3">
+      <div class="col-12 col-md-3">
         <div class="row">
           <div class="col-12">
             <div class="h5">Receipt:</div>
           </div>
         </div>
-        <div class="card p-3 scroll-item receipt" style="height: 92vh;">
-          <div class="receipt" id="receipt">
-
-          </div>
-          <div class="mt-4 d-flex flex-row justify-content-between">
-            <div><b>TOTAL</b></div>
-            <div><b class="total-value" id="totalValue">0</b></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row py-3">
-      <div class="d-md-none col-12">
-        <div class="row">
-          <div class="col-12">
-            <div class="h5">Receipt:</div>
-          </div>
-        </div>
-        <div class="card p-3 scroll-item small-receipt">
-          <div id="smallReceipt">
+        <div class="card p-3 mb-2 scroll-item receipt">
+          <div id="receipt">
 
           </div>
           <div class="mt-4 d-flex flex-row justify-content-between">
