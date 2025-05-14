@@ -186,21 +186,12 @@ function updateTotal(itemPrice) {
 
 function addToReceipt(price, code) {
     var receiptContainer = document.getElementById("receipt");
-    var smallReceiptContainer = document.getElementById("smallReceipt");
     total = parseFloat(total) + parseFloat(price);
 
     totalValueElement = document.getElementById("totalValue");
     totalValueElement.innerHTML = total;
 
     receiptContainer.innerHTML += `
-    <div class="d-flex flex-row justify-content-between mb-1" id="`+ code + `">
-        <div><small>`+ code + `</small></div>
-        <div><small>`+ price + `</small></div>
-        <div><button type="button" onclick="removeItem('`+ code + `'); updateTotal('` + price + `')"><small><i class="fas fa-trash"></i></button></small></div>
-    </div>
-    `;
-
-    smallReceiptContainer.innerHTML += `
     <div class="d-flex flex-row justify-content-between mb-1" id="`+ code + `">
         <div><small>`+ code + `</small></div>
         <div><small>`+ price + `</small></div>
