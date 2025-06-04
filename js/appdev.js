@@ -1,10 +1,12 @@
 var descriptions = [
     "A03 | TechTrove",
-    "A04 | POS System"
+    "A04 | POS System",
+    "A07 | Music Albums"
 ];
 var links = [
     "A03/index.html",
-    "A04-Backup/index.html"
+    "A04-Backup/index.html",
+    "A07/index.html"
 ];
 
 for (var i = 0; i < descriptions.length; i++) {
